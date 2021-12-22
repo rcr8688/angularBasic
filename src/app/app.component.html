@@ -1,0 +1,16 @@
+<input type="text" [(ngModel)]="student.name">
+<button (click)="OnSubmit()">submit</button>
+<button (click)="increment()">increment</button>
+<button (click)="Decrement()">Decrement</button>
+<button (click)="reset()">reset</button>
+{{count|async}}
+<app-parent [student]="student"></app-parent>
+
+
+<p *ngIf="cordts.lat">
+    latitude:{{cordts.lat}}
+</p>
+
+<p *ngIf="cordts.lon">
+    longitude: {{cordts.lon}}
+</p>
